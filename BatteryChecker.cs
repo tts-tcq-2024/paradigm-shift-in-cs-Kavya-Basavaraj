@@ -6,7 +6,7 @@ namespace Checker
     public class BatteryChecker
     {
         private readonly IBatteryCheck _temperatureCheck = new TemperatureCheck();
-        private readonly IBatteryCheck _socCheck = new SocCheck();
+        private readonly IBatteryCheck _socCheck = new SocketCheck();
         private readonly IBatteryCheck _chargeRateCheck = new ChargeRateCheck();
         private readonly IBatteryCheck _voltageCheck = new VoltageCheck(); // Add voltage check
 
